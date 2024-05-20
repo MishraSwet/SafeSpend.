@@ -21,7 +21,13 @@ model User {
   password String
   createdAt DateTime
   
-  
+}
+
+model Post {
+  id Int @id@default(autoincrement())
+  time DateTime
+  content String
+  img String
 }
 
 model Transactions {
