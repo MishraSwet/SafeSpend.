@@ -1,3 +1,3 @@
 export default function App() {
-  return <div>Hello Merchants</div>
+  return <div>Merchant App</div>
 }
