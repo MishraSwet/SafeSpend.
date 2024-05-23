@@ -23,12 +23,6 @@ model User {
   
 }
 
-model Post {
-  id Int @id@default(autoincrement())
-  time DateTime
-  content String
-  img String
-}
 
 model Transactions {
 id Int @id@default(autoincrement())
