@@ -20,12 +20,13 @@ model User {
   username String
   password String
   createdAt DateTime @default(now())
-  
+  Transactions Transaction[]
 }
 
 
-model Transactions {
+model Transaction {
 id Int @id@default(autoincrement())
 date DateTime @default(now())
-
+Creator User @relation(fields:[Userid],references:[id]) 
+Userid Int
 }
