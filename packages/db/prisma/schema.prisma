@@ -19,13 +19,13 @@ model User {
   phone String @unique
   username String
   password String
-  createdAt DateTime
+  createdAt DateTime @default(now())
   
 }
 
 
 model Transactions {
 id Int @id@default(autoincrement())
-date DateTime
+date DateTime @default(now())
 
 }
