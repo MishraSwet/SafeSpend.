@@ -30,3 +30,12 @@ date DateTime @default(now())
 Creator User @relation(fields:[Userid],references:[id]) 
 Userid Int
 }
+
+model Merchant {
+  id Int @id@default(autoincrement())
+  username String
+  password String
+  createdAt DateTime @default(now())
+  
+
+}
