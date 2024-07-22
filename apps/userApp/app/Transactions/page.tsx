@@ -10,8 +10,8 @@ export function TransactionCard() {
     </div>
 }
 
-export function TransactionMenu() {
+export function TransactionSelect() {
     return <div>
-        Transaction Menu
+        Transaction 
     </div>
 }
