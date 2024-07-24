@@ -1,8 +1,17 @@
 "use client"
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+
+interface Transaction{
+    status: string,
+    time: string,
+}
+const [data, setdata] = useState<[]>([]);
+
 export default function Transactions() {
     return <div>
-        <Navbar/>
+        <Navbar />
+        <TransactionCard />
     </div>
 }
 
@@ -48,8 +57,8 @@ export function NavBtn() {
 }
 
 export function TransactionCard() {
-    return <div>
-        Transaction Card
+    return <div className="flex items-center justify-center">
+
     </div>
 }
 
