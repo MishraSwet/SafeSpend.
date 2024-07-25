@@ -3,3 +3,9 @@ export default function Targets() {
         Targets
     </div>
 }
+
+export function TargetCard() {
+    return <div>
+        
+    </div>
+}
