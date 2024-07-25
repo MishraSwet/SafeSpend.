@@ -6,7 +6,7 @@ interface Transaction{
     status: string,
     time: string,
 }
-const [data, setdata] = useState<[]>([]);
+const [data, setdata] = useState<Transaction[]>([]);
 
 export default function Transactions() {
     return <div>
