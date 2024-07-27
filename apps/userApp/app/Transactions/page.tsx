@@ -5,6 +5,7 @@ import { useState } from 'react';
 interface Transaction{
     status: string,
     time: string,
+    amount:string
 }
 const [data, setdata] = useState<Transaction[]>([]);
 
