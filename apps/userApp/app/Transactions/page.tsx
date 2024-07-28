@@ -63,8 +63,3 @@ export function TransactionCard() {
     </div>
 }
 
-export function TransactionSelect() {
-    return <div>
-        Transaction 
-    </div>
-}
