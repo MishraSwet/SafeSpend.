@@ -12,7 +12,7 @@ const [data, setdata] = useState<Transaction[]>([]);
 export default function Transactions() {
     return <div>
         <Navbar />
-        <TransactionCard />
+        {/* <TransactionCard /> */}
     </div>
 }
 
@@ -57,9 +57,11 @@ export function NavBtn() {
     </button>
 }
 
-export function TransactionCard() {
+export function TransactionCard({status,time,amount}:Transaction) {
     return <div className="flex items-center justify-center">
-
+        <div>{status}</div>
+        <div>{time}</div>
+        <div>{amount}</div>
     </div>
 }
 
