@@ -73,7 +73,9 @@ export function NavBtn() {
 }
 
 export function TransactionCard({ transaction } :Transactionprops) {
-    return <div className="flex items-center justify-center">
+    return <div className="flex items-center justify-center bg-red-200 h-16">
+        <div className="flex flex-col items-center justify-center w-1/2"></div>
+        <div className="flex flex-col items-center justify-center w-1/2"></div>
     </div>
 }
 
