@@ -3,16 +3,31 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 interface Transaction{
+    id: string,
+    date: string,
+    desc: string,
     status: string,
     time: string,
     amount:string
 }
-const [data, setdata] = useState<Transaction[]>([]);
 
-export default function Transactions() {
+interface Transactionprops{
+    transaction:Transaction
+}
+
+export default function Transaction() {
+    const [data, setData] = useState<Transaction[]>([
+        { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }
+    ]);
+
     return <div>
         <Navbar />
-        {/* <TransactionCard /> */}
+        {data.map((trans) => (
+            <TransactionCard
+                key={trans.id}
+                transaction={trans} />
+
+        ))}
     </div>
 }
 
@@ -57,11 +72,8 @@ export function NavBtn() {
     </button>
 }
 
-export function TransactionCard({status,time,amount}:Transaction) {
+export function TransactionCard({ transaction } :Transactionprops) {
     return <div className="flex items-center justify-center">
-        <div>{status}</div>
-        <div>{time}</div>
-        <div>{amount}</div>
     </div>
 }
 
