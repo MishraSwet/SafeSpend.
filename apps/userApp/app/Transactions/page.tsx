@@ -16,8 +16,10 @@ interface Transactionprops{
 }
 
 export default function Transaction() {
-    const getTransactions = () => {
-        fetch("localhost://3001/api/transactions").then((data)=>{console.log(data)})
+    async function getTransactions() {
+        // Fetch posts from your API or database
+        const res = await fetch('https://api.example.com/Transactions');
+        return res.json();
     }
     const [data, setData] = useState<Transaction[]>([
         { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }
