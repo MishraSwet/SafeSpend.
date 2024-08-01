@@ -19,6 +19,7 @@ export default function Transaction() {
     async function getTransactions() {
         // Fetch posts from your API or database
         const res = await fetch('https://api.example.com/Transactions');
+
         return res.json();
     }
     const posts = use(getTransactions());
@@ -32,7 +33,7 @@ export default function Transaction() {
         {data.map((trans) => (
             <TransactionCard
                 key={trans.id}
-                transaction={trans} />
+                transaction={posts} />
 
         ))}
     </div>
