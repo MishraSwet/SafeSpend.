@@ -24,9 +24,9 @@ export default function Transaction() {
     }
     const posts = use(getTransactions());
 
-    const [data, setData] = useState<Transaction[]>([
-        { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }
-    ]);
+    // const [data, setData] = useState<Transaction[]>([
+    //     { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }
+    // ]);
 
     return <div>
         <Navbar />
