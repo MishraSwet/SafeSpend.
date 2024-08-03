@@ -2,7 +2,7 @@ interface Settingform{
     label: string,
 }
 export default function Settings() {
-    return <div>
+    return <div className="flex flex-col items-center justify-center">
         Settings Page
     </div>
 }
