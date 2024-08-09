@@ -36,6 +36,4 @@ model Merchant {
   username String
   password String
   createdAt DateTime @default(now())
-  
-
 }
