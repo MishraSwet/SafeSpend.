@@ -1,6 +1,7 @@
 export default function Signup(){
     return <div>
         <form>
+            <p>Signup Page</p>
             <label>Username</label>
             <input type="text"></input>
             <label>email</label>
