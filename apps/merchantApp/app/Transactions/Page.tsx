@@ -11,12 +11,29 @@ interface Transactionprops {
   transaction: Transaction
 }
 
+
 export default function Transactions() {
-  return (
-    <div>
-      Transactions Page
-    </div>
-  )
+  async function getTransactions() {
+    // Fetch posts from your API or database
+    const res = await fetch('https://api.example.com/Transactions');
+
+    return res.json();
+  }
+  const posts = use(getTransactions());
+
+  const [data, setData] = useState<Transaction[]>([
+    { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }, { id: "1", date: "1/1/24", desc: "desc", status: "status", time: "10:24", amount: "6000" }
+  ]);
+
+  return <div>
+    <Navbar />
+    {data.map((trans) => (
+      <TransactionCard
+        key={trans.id}
+        transaction={posts} />
+
+    ))}
+  </div>
 }
 
 export function TransactionCard({ transaction }: Transactionprops) {
