@@ -19,7 +19,7 @@ interface Transactionprops {
 export default function Transactions() {
   async function getTransactions() {
     // Fetch posts from your API or database
-    const res = await fetch('https://api.example.com/Transactions');
+    const res = await fetch('');
 
     return res.json();
   }
