@@ -30,7 +30,6 @@ export default function Transactions() {
   ]);
 
   return <div>
-    <Navbar />
     {data.map((trans) => (
       <TransactionCard
         key={trans.id}
