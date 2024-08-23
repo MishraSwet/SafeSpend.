@@ -1,5 +1,6 @@
 SafeSpend App
 User App + Merchant App 
 Built In Next14
-Packaged With Turborepo
+Designed In Tailwind
+Packaged With Turborepoo
 Maintained By Mishra_Swet
