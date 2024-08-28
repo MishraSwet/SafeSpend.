@@ -1,5 +1,5 @@
 export default function Settings() {
     return <div>
-        Settings Page
+        Settings Page Merchant App
     </div>
 }
